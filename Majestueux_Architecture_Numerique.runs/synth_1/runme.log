@@ -1,0 +1,408 @@
+
+*** Running vivado
+    with args -log top_vga.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_vga.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Thu Apr  2 12:42:56 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top_vga.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 642.238 ; gain = 198.770
+Command: read_checkpoint -auto_incremental -incremental C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/utils_1/imports/synth_1/clock_div.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/utils_1/imports/synth_1/clock_div.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_vga -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28116
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1303.266 ; gain = 467.750
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_vga' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/top_vga.vhd:55]
+INFO: [Synth 8-3491] module 'vga_controller' declared at 'C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/vga_controller.vhd:34' bound to instance 'vga_inst' of component 'vga_controller' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/top_vga.vhd:204]
+INFO: [Synth 8-638] synthesizing module 'vga_controller' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/vga_controller.vhd:45]
+INFO: [Synth 8-3491] module 'horizontal_compteur' declared at 'C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/horizontal_compteur.vhd:34' bound to instance 'h_compteur_inst' of component 'horizontal_compteur' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/vga_controller.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'horizontal_compteur' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/horizontal_compteur.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'horizontal_compteur' (0#1) [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/horizontal_compteur.vhd:43]
+INFO: [Synth 8-3491] module 'vertical_compteur' declared at 'C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/vertical_compteur.vhd:35' bound to instance 'v_compteur_inst' of component 'vertical_compteur' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/vga_controller.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'vertical_compteur' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/vertical_compteur.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'vertical_compteur' (0#1) [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/vertical_compteur.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'vga_controller' (0#1) [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/vga_controller.vhd:45]
+INFO: [Synth 8-3491] module 'top_labyrinthe' declared at 'C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/top_labyrinthe.vhd:34' bound to instance 'laby_top' of component 'top_labyrinthe' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/top_vga.vhd:215]
+INFO: [Synth 8-638] synthesizing module 'top_labyrinthe' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/top_labyrinthe.vhd:46]
+INFO: [Synth 8-3491] module 'ifsr_generator' declared at 'C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/ifsr_generator.vhd:34' bound to instance 'ifsr_inst' of component 'ifsr_generator' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/top_labyrinthe.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'ifsr_generator' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/ifsr_generator.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'ifsr_generator' (0#1) [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/ifsr_generator.vhd:41]
+INFO: [Synth 8-3491] module 'labyrinthe_bram' declared at 'C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/labyrinthe_bram.vhd:35' bound to instance 'bram_inst' of component 'labyrinthe_bram' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/top_labyrinthe.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'labyrinthe_bram' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/labyrinthe_bram.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'labyrinthe_bram' (0#1) [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/labyrinthe_bram.vhd:47]
+INFO: [Synth 8-3491] module 'labyrinthe_generator' declared at 'C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/labyrinthe_generator.vhd:35' bound to instance 'laby_inst' of component 'labyrinthe_generator' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/top_labyrinthe.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'labyrinthe_generator' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/labyrinthe_generator.vhd:49]
+INFO: [Synth 8-3491] module 'liste_bram' declared at 'C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/liste_bram.vhd:35' bound to instance 'liste_inst' of component 'liste_bram' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/labyrinthe_generator.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'liste_bram' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/liste_bram.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'liste_bram' (0#1) [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/liste_bram.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'labyrinthe_generator' (0#1) [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/labyrinthe_generator.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'top_labyrinthe' (0#1) [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/top_labyrinthe.vhd:46]
+INFO: [Synth 8-3491] module 'jeux_logique' declared at 'C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/jeux_logique.vhd:35' bound to instance 'joueur_inst' of component 'jeux_logique' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/top_vga.vhd:226]
+INFO: [Synth 8-638] synthesizing module 'jeux_logique' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/jeux_logique.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'jeux_logique' (0#1) [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/jeux_logique.vhd:50]
+INFO: [Synth 8-3491] module 'rendu_affichage' declared at 'C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/rendu_affichage.vhd:35' bound to instance 'render_inst' of component 'rendu_affichage' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/top_vga.vhd:241]
+INFO: [Synth 8-638] synthesizing module 'rendu_affichage' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/rendu_affichage.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'rendu_affichage' (0#1) [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/rendu_affichage.vhd:51]
+INFO: [Synth 8-3491] module 'timer' declared at 'C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/timer.vhd:35' bound to instance 'timer_inst' of component 'timer' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/top_vga.vhd:256]
+INFO: [Synth 8-638] synthesizing module 'timer' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/timer.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'timer' (0#1) [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/timer.vhd:46]
+INFO: [Synth 8-3491] module 'ecran_win' declared at 'C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/ecran_win.vhd:14' bound to instance 'win_inst' of component 'ecran_win' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/top_vga.vhd:267]
+INFO: [Synth 8-638] synthesizing module 'ecran_win' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/ecran_win.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'ecran_win' (0#1) [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/ecran_win.vhd:27]
+INFO: [Synth 8-3491] module 'ecran_over' declared at 'C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/ecran_over.vhd:25' bound to instance 'over_inst' of component 'ecran_over' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/top_vga.vhd:278]
+INFO: [Synth 8-638] synthesizing module 'ecran_over' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/ecran_over.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'ecran_over' (0#1) [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/ecran_over.vhd:37]
+INFO: [Synth 8-3491] module 'ecran_load' declared at 'C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/ecran_load.vhd:35' bound to instance 'load_inst' of component 'ecran_load' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/top_vga.vhd:289]
+INFO: [Synth 8-638] synthesizing module 'ecran_load' [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/ecran_load.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'ecran_load' (0#1) [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/ecran_load.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'top_vga' (0#1) [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/sources_1/new/top_vga.vhd:55]
+WARNING: [Synth 8-7129] Port gen_done in module rendu_affichage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lfsr_val[15] in module labyrinthe_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lfsr_val[14] in module labyrinthe_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lfsr_val[13] in module labyrinthe_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lfsr_val[12] in module labyrinthe_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lfsr_val[11] in module labyrinthe_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lfsr_val[10] in module labyrinthe_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lfsr_val[9] in module labyrinthe_generator is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1427.906 ; gain = 592.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1427.906 ; gain = 592.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1427.906 ; gain = 592.391
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1427.906 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/constrs_1/new/contraints.xdc]
+Finished Parsing XDC File [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/constrs_1/new/contraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.srcs/constrs_1/new/contraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_vga_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_vga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1502.641 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1502.641 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1502.641 ; gain = 667.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1502.641 ; gain = 667.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1502.641 ; gain = 667.125
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'etat_reg' in module 'labyrinthe_generator'
+INFO: [Synth 8-3971] The signal "labyrinthe_bram:/cell_mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                           000000 |                           000000
+               init_bram |                           000001 |                           000001
+             pose_depart |                           000010 |                           000010
+              ajout_nord |                           000011 |                           000011
+       ajout_nord_ecrire |                           000100 |                           000111
+               ajout_sud |                           000101 |                           000100
+        ajout_sud_ecrire |                           000110 |                           001000
+               ajout_est |                           000111 |                           000101
+        ajout_est_ecrire |                           001000 |                           001001
+             ajout_ouest |                           001001 |                           000110
+      ajout_ouest_ecrire |                           001010 |                           001010
+                  pioche |                           001011 |                           001011
+          pioche_lecture |                           001100 |                           001100
+          pioche_capture |                           001101 |                           001101
+           pioche_decode |                           001110 |                           001110
+            verification |                           001111 |                           010001
+    verification_attente |                           010000 |                           010010
+                 creuser |                           010001 |                           010101
+           attente_mur_b |                           010010 |                           010111
+              lire_mur_b |                           010011 |                           010110
+            ecrire_mur_a |                           010100 |                           011000
+      ecrire_mur_a_write |                           010101 |                           011001
+            ecrire_mur_b |                           010110 |                           011010
+      ecrire_mur_b_write |                           010111 |                           011011
+  attente_dernier_visite |                           011000 |                           100000
+  capture_dernier_visite |                           011001 |                           010000
+          marquer_visite |                           011010 |                           011101
+    marquer_visite_write |                           011011 |                           011110
+                 ignorer |                           011100 |                           010011
+  attente_dernier_ignore |                           011101 |                           011111
+  capture_dernier_ignore |                           011110 |                           001111
+          ignorer_ecrire |                           011111 |                           010100
+    ignorer_ecrire_write |                           100000 |                           011100
+                 termine |                           100001 |                           100001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'etat_reg' using encoding 'sequential' in module 'labyrinthe_generator'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1502.641 ; gain = 667.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   27 Bit       Adders := 1     
+	   2 Input   25 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 4     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 5     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 2     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	               25 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 6     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 5     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 7     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 10    
++---RAMs : 
+	               5K Bit	(512 X 10 bit)          RAMs := 1     
+	             1024 Bit	(256 X 4 bit)          RAMs := 1     
++---Muxes : 
+	  34 Input  256 Bit        Muxes := 2     
+	  34 Input   10 Bit        Muxes := 3     
+	  34 Input    9 Bit        Muxes := 4     
+	   4 Input    8 Bit        Muxes := 1     
+	  34 Input    8 Bit        Muxes := 5     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 3     
+	  34 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 14    
+	   4 Input    6 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 4     
+	  34 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 23    
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 7     
+	   4 Input    1 Bit        Muxes := 2     
+	  34 Input    1 Bit        Muxes := 19    
+	   6 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port gen_done in module rendu_affichage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lfsr_val[15] in module labyrinthe_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lfsr_val[14] in module labyrinthe_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lfsr_val[13] in module labyrinthe_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lfsr_val[12] in module labyrinthe_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lfsr_val[11] in module labyrinthe_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lfsr_val[10] in module labyrinthe_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lfsr_val[9] in module labyrinthe_generator is either unconnected or has no load
+INFO: [Synth 8-3971] The signal "top_vga/laby_top/bram_inst/cell_mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 1594.438 ; gain = 758.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++---------------------+--------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name          | RTL Object               | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------+--------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|\laby_top/laby_inst  | liste_inst/liste_mem_reg | 512 x 10(READ_FIRST)   | W |   | 512 x 10(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++---------------------+--------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 1627.871 ; gain = 792.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:05 . Memory (MB): peak = 1731.996 ; gain = 896.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++---------------------+--------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name          | RTL Object               | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------+--------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|\laby_top/laby_inst  | liste_inst/liste_mem_reg | 512 x 10(READ_FIRST)   | W |   | 512 x 10(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++---------------------+--------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance laby_top/bram_inst/cell_mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance laby_top/bram_inst/cell_mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance laby_top/laby_inst/liste_inst/liste_mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 1750.062 ; gain = 914.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:01:12 . Memory (MB): peak = 1876.547 ; gain = 1041.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:01:12 . Memory (MB): peak = 1876.547 ; gain = 1041.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:06 ; elapsed = 00:01:13 . Memory (MB): peak = 1876.547 ; gain = 1041.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:06 ; elapsed = 00:01:13 . Memory (MB): peak = 1876.547 ; gain = 1041.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:13 . Memory (MB): peak = 1878.500 ; gain = 1042.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:13 . Memory (MB): peak = 1878.500 ; gain = 1042.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    64|
+|3     |LUT1     |    36|
+|4     |LUT2     |   166|
+|5     |LUT3     |   128|
+|6     |LUT4     |   222|
+|7     |LUT5     |   189|
+|8     |LUT6     |   909|
+|9     |MUXF7    |   134|
+|10    |RAMB18E1 |     3|
+|12    |FDRE     |   512|
+|13    |FDSE     |    10|
+|14    |IBUF     |     9|
+|15    |OBUF     |    26|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:13 . Memory (MB): peak = 1878.500 ; gain = 1042.984
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:01:11 . Memory (MB): peak = 1878.500 ; gain = 968.250
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:14 . Memory (MB): peak = 1878.500 ; gain = 1042.984
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1887.676 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 201 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1891.406 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: fc53c1d7
+INFO: [Common 17-83] Releasing license: Synthesis
+72 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:14 ; elapsed = 00:01:24 . Memory (MB): peak = 1891.406 ; gain = 1238.711
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1891.406 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.runs/synth_1/top_vga.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_vga_utilization_synth.rpt -pb top_vga_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  2 12:44:37 2026...

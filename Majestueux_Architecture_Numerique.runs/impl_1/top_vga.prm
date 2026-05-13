@@ -1,0 +1,14 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               16M
+Start Address      0x00000000
+End Address        0x00FFFFFF
+Checksum           0xF9B145EA
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                                                                                                                                      Checksum
+0x00000000    0x00059A07    Apr  2 12:46:52 2026    C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.runs/impl_1/top_vga.bit    0x0045B3E2
+File Checksum Total                                                                                                                                                                              0x0045B3E2

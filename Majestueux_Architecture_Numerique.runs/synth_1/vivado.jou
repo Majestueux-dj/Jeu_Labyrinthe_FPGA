@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Apr  2 12:42:56 2026
+# Process ID         : 21484
+# Current directory  : C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.runs/synth_1
+# Command line       : vivado.exe -log top_vga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_vga.tcl
+# Log file           : C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.runs/synth_1/top_vga.vds
+# Journal file       : C:/Users/freej/Desktop/Architecture_Numerique/Majestueux_Architecture_Numerique/Majestueux_Architecture_Numerique.runs/synth_1\vivado.jou
+# Running On         : DJOSSOU
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 185H
+# CPU Frequency      : 3072 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 22
+# Host memory        : 33713 MB
+# Swap memory        : 4405 MB
+# Total Virtual      : 38119 MB
+# Available Virtual  : 7086 MB
+#-----------------------------------------------------------
+source top_vga.tcl -notrace
