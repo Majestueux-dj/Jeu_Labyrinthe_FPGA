@@ -1,6 +1,5 @@
-# Jeu Labyrinthe FPGA — Architecture Numérique
+# Jeu Labyrinthe FPGA
 
-Projet réalisé dans le cadre du cours d'Architecture Numérique à l'UBS.  
 Implémentation d'un jeu de labyrinthe sur FPGA en VHDL, avec affichage VGA.
 
 ## Description
@@ -15,7 +14,6 @@ Le projet tourne sur carte FPGA et inclut :
 
 ## Prérequis
 
-- Vivado 2024.x (ou version compatible)
 - Carte FPGA compatible (Basys3 / Nexys4)
 - Écran avec entrée VGA
 
@@ -29,4 +27,4 @@ Le projet tourne sur carte FPGA et inclut :
 
 ## Auteur
 
-Djossou — UBS, 2026
+Djossou Majestueux, 2026
